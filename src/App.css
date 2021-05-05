@@ -1,38 +1,242 @@
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mhcontainer {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 80px;
   display: flex;
-  flex-direction: column;
+
+}
+
+.mhlogocontainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mhmenubutcontainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  margin-left: 5%;
+}
+
+.menubutton {
+  background-color: #FED136;
+  color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+  width: 75px;
+  height: 40px;
+  margin-right: 5%;
+  border-radius: 4px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.menubutton > p {
+  font-size: 13px;
+}
+
+.menuslitscontainer {
+  width: 14px;
+  height: 12px;
+  margin-left: 6px;
+}
+.menuslits {
+  background-color: white;
+  width: 14px;
+  height: 2px;
+  margin-bottom: 2px;
+  border-radius: 1px;
+}
+
+.welcomesection {
+  background-image: url('https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 280px;
+  padding-bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 500;
+}
+.subhead {
   color: white;
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.head {
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 3.25rem;
+  font-weight: 1000;
+  margin-bottom: 25px;
+}
+button[name=more] {
+  text-align: center;
+  background-color: #FED136;
+	color: white;
+  height: 70px;
+  width: 220px;
+	border: none;
+  border-radius: 6px;
+	padding: 0;
+	font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 1rem;
+	cursor: pointer;
+	outline: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+.servicesection {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.servicecontainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+
+.serviceheading {
+  width: 100%;
+  
+}
+
+.serviceheading h1 {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+.scontent {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.5rem;
+  font-family: 'Montserrat';
+  font-weight: 200;
+  color: grey;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+.iconcircle {
+  width: 150px;
+  height: 150px;
+  background-color: #FED136;
+  border: 0 none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 25px;
+}
+svg {
+  width: 75px;
+  height: 75px;
+}
+
+h2 {
+  color: grey;
+  text-align: center;
+  font-family: 'Roboto Slab';
+  font-size: 1rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.portfoliosection {
+  background-color: lightgray;
+  width: 100%;
+  height: 900px;
+}
+
+.aboutsection {
+  background-color: white;
+  width: 100%;
+  height: 1100px;
+}
+
+.teamsection {
+  background-color: lightgray;
+  width: 100%;
+  height: 700px;
+}
+
+.affiliatesection {
+  background-color: white;
+  width: 100%;
+  height: 260px;
+}
+
+.contactsection {
+  background-color: black;
+  width: 100%;
+  height: 600px;
+
+}
+
+.footer {
+  background-color: white;
+  width: 100%;
+  height: 140px;
+}
+
+
+@media (min-width: 900px) {
+  .servicecontent {
+    display: flex;
   }
-  to {
-    transform: rotate(360deg);
+  .scontent {
+    margin-bottom: 100px;
   }
+  
+}
+
+@media (min-width: 1200px) {
+  .servicecontent {
+    width: 1200px;
+    margin: auto;
+  }
+  
 }
